@@ -32,3 +32,9 @@ jobs:
       - name: Push php Docker image to ECR
         run: |
           docker push 688567291323.dkr.ecr.ap-northeast-1.amazonaws.com/php-git-ecr-server:latest
+      - name: Deploy to ECS
+        run: |
+          aws ecs update-service \
+            --cluster php-cluster \
+            --service php-mysql-services \
+            --force-new-deployment
