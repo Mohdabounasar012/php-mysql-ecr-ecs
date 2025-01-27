@@ -1,6 +1,6 @@
 <?php
 // Define constants for database connection
-define("DB_SERVER", "docker-db.ch2wm0wuekno.ap-northeast-1.rds.amazonaws.com");  // Use 'db' as the host name since it's the service name in Docker
+define("DB_SERVER", "database-2.ch2wm0wuekno.ap-northeast-1.rds.amazonaws.com");  // Use 'db' as the host name since it's the service name in Docker
 define("DB_USERNAME", "admin");
 define("DB_PASSWORD", "Abounasar");
 define("DB_NAME", "mydb");
